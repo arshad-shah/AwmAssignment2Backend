@@ -55,7 +55,8 @@ LOGGING = {
 ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
-    "https://awmassignment.arshadshah.com"
+    "https://awmassignment.arshadshah.com",
+    "http://localhost:3000",
 ]
 
 CORS_ALLOW_METHODS = [
@@ -157,8 +158,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/day',
-        'user': '100000/day'
+        'anon': '1000/day',
+        'user': '10000/day'
     }
 }
 
